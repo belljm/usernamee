@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page 1</title>
+  </head>
+  <h1>page 1</h1>
+  <br />
+  <body>
+    <button id="myButton">to page 2</button>
+
+    <script>
+      // Add event listener to button
+      document
+        .getElementById("myButton")
+        .addEventListener("click", function () {
+          // Change the URL of the current page
+          window.location.href = "page2.html";
+        });
+    </script>
+  </body>
+</html>

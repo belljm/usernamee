@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <style>
+      button {
+        background-color: rgb(56, 56, 56);
+        color: aliceblue;
+        border: 1px solid #9e9e9e;
+        border-radius: 7px;
+      }
+
+      p {
+        font-family: sans-serif;
+        color: rgb(112, 112, 112);
+      }
+    </style>
+
+    <script>
+      function doSomething() {
+        alert("you thought 💀 ");
+        //here Change of page
+      }
+    </script>
+    <button>
+      <input type="button" onclick="doSomething()" /> < click for love and care</button
+    ><br />
+    <br />
+
+    <input type="text" id="user" /> <br />
+    <button id="btn" onclick="changeImage()">Save Username</button>
+    <p>Username:</p>
+    <p id="username"></p>
+    <script>
+      var username = document.getElementById("username");
+      function changeImage() {
+        var user = document.getElementById("user");
+        var enteredText = user.value;
+        username.innerText = enteredText + " ";
+      }
+    </script>
+  </body>
+</html>
