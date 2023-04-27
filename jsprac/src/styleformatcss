@@ -1,0 +1,22 @@
+.bttn button {
+    background-color: rgb(141, 141, 141);
+    color: rgb(243, 243, 243);
+    border: 1px solid #a0a0a0;
+    border-radius: 7px;
+
+}
+
+.login {
+
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.txtstyl {
+    font-family: sans-serif;
+    color:rgb(112, 112, 112)
+
+}
