@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<div class="txtstyl" class="login" class="bttn">
+    
+    <input type="text" id="user"> 
+    <button id="btn" onclick="changeImage()">Save</button>
+    <p>
+        <strong>Username:</strong>
+    </p>
+    <p id="username"></p> 
+    <script> var username = document.getElementById("username");
+        function changeImage() {
+        var user = document.getElementById("user")
+        var enteredText = user.value;
+        username.innerText = enteredText + " " ;
+        }
+    </script>
+
+</div>
+
+</body>
+</html>
