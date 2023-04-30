@@ -18,44 +18,46 @@
 	}
 	
 		</style>
-
+	<body>
 	<h1>Create Account</h1><br/>
-		<div>
+
+	<div>
 			<label for="label1">Username:</label>
-			<input type="text" id="user" rows="1" cols="20" maxlength="15" minlength="2" placeholder="Username">
+			<input type="text" id="uname" rows="1" cols="20" maxlength="15" minlength="2" placeholder="Username">
 			<button id="btn" onclick="changeImage()">Submit</button><br>
 			<p style="font-family: sans-serif; font-size: 12px;color: rgb(150, 129, 86);">Username must be no longer than 15 characters.</p>
 			<p id="username"></p>
 			<script> 
 			var username = document.getElementById("username");
 			function changeImage() {
-			var user = document.getElementById("user")
-			var enteredText = user.value;
-			username.innerText = enteredText + " " ;
+			var uname = document.getElementById("uname")
+			var enteredText = uname.value;
+			username.innerHTML = enteredText + " " ;
 			}
 			</script>
-			</div>
+	</div>
+
 	<div>
-		<label for="label2">Password:</label>
-		<input type="text" id="pasw" rows="1" cols="20" maxlength="16" minlength="4" placeholder="Password">
-		<button id="btn" onclick="changeImage()">Submit</button><br>
-		<p style="font-family: sans-serif; font-size: 12px;color: rgb(150, 129, 86);">Password must be between 4 and 16 characters.</p>
-		<p id="password"></p>
-		<script> 
-		var password = document.getElementById("password");
-		function changeImage() {
-		var passw = document.getElementById("pasw")
-		}
-		</script>
-		</div>
+				<label for="label2">Password:</label>
+				<input type="text" id="pasw" rows="1" cols="20" maxlength="16" minlength="4" placeholder="Password">
+				<button id="btn" onclick="changeImage()">Submit</button><br>
+				<p style="font-family: sans-serif; font-size: 12px;color: rgb(150, 129, 86);">Password must be between 4 and 16 characters.</p>
+				<p id="password"></p>
+				<script> 
+				var password = document.getElementById("password");
+				function changeImage() {
+				var passw = document.getElementById("pasw")
+				}
+				</script>
+	</div>
+	
 	<div>
 		<label for="date1">Date Of Birth:</label>
 		<input type="date" name="dob" >
 		<button id="btn" onclick="changeImage()">Save</button><br>
 
 	</div>
-	</head>
-	<body>
+
 		<button id="myButton" style="margin-top: 80%; margin-left: 85%;">to page 2 ></button>
 		<script>
 			// Add event listener to button
@@ -65,4 +67,5 @@
 			});
 		</script>
 	</body>
+</head>
 </html>
