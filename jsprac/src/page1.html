@@ -53,9 +53,19 @@
 	
 	<div>
 		<label for="date1">Date Of Birth:</label>
-		<input type="date" name="dob" >
+		<input type="date" name="dob" id="dob" >
 		<button id="btn" onclick="changeImage()">Save</button><br>
+		<p id="dateob"></p>
+		<script>
+			var dateob = document.getElementById("dateob");
+			function changeImage() {
+				var dob = document.getElementById("dob")
+				var date = dob.value;
+				dateob.innerHTML = date + " ";
+			}
 
+
+		</script>
 	</div>
 
 		<button id="myButton" style="margin-top: 80%; margin-left: 85%;">to page 2 ></button>
