@@ -39,7 +39,7 @@
 
 	<div>
 				<label for="label2">Password:</label>
-				<input type="text" id="pasw" rows="1" cols="20" maxlength="16" minlength="4" placeholder="Password">
+				<input type="text" id="pasw" rows="1" cols="20" maxlength="16" minlength="4" placeholder="Password" onkeypress="return /[0-9a-zA-Z]/i.test(event.key)">
 				<button id="btn" onclick="changeImage()">Submit</button><br>
 				<p style="font-family: sans-serif; font-size: 12px;color: rgb(150, 129, 86);">Password must be between 4 and 16 characters.</p>
 				<p id="password"></p>
