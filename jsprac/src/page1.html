@@ -23,9 +23,9 @@
 
 	<div>
 			<label for="label1">Username:</label>
-			<input type="text" id="uname" rows="1" cols="20" maxlength="15" minlength="2" placeholder="Username">
+			<input type="text" id="uname" rows="1" cols="20" maxlength="15" minlength="2" placeholder="Username" onkeypress="return /[0-9a-zA-Z]/i.test(event.key)">
 			<button id="btn" onclick="changeImage()">Submit</button><br>
-			<p style="font-family: sans-serif; font-size: 12px;color: rgb(150, 129, 86);">Username must be no longer than 15 characters.</p>
+			<p style="font-family: sans-serif; font-size: 12px;color: rgb(150, 129, 86);">Username cannot contain special characters. Maximum 15 characters.</p>
 			<p id="username"></p>
 			<script> 
 			var username = document.getElementById("username");
