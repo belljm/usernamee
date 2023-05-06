@@ -1,81 +1,111 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Page 1</title>
-		<style>
-	body {
+  <head>
+    <title>Page 1</title>
+    <style>
+      body {
         margin: 0;
         padding: 0;
         font-family: Arial, sans-serif;
-		color:rgb(255, 255, 255);
-        background-color: #d8b389;
-		text-align: center;
-     	}
-	textarea {
-		resize: none;
-		border-radius: 5px;
-		padding: 1px;
-	}
-	
-		</style>
-	<body>
-	<h1>Create Account</h1><br/>
+        color:rgb(255, 255, 255);
+        background-color: #f1e3d1;
+        text-align: center;
+        
+      }
+      textarea {
+        resize: none;
+        border-radius: 5px;
+        padding: 1px;
+      }
+      .centered-rectangle {
+        background-color: #EBD5B8;
+        width: 45%;
+        height: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1; /* push the rectangle behind the text */
+      }
+      .centered-rectangle2 {
+        background-color: #968156;
+        width: 46%;
+        height: 51%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -2; /* push the rectangle behind the text */
+      }
+      .centered-text {
+        width: 50%;
+        height: 40%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="centered-text">
+    <h1>Create Account</h1><br/><br/>
 
-	<div>
-			<label for="label1">Username:</label>
-			<input type="text" id="uname" rows="1" cols="20" maxlength="15" minlength="2" placeholder="Username" onkeypress="return /[0-9a-zA-Z]/i.test(event.key)">
-			<button id="btn" onclick="changeImage()">Submit</button><br>
-			<p style="font-family: sans-serif; font-size: 12px;color: rgb(150, 129, 86);">Username cannot contain special characters. Maximum 15 characters.</p>
-			<p id="username"></p>
-			<script> 
-			var username = document.getElementById("username");
-			function changeImage() {
-			var uname = document.getElementById("uname")
-			var enteredText = uname.value;
-			username.innerHTML = enteredText + " " ;
-			}
-			</script>
-	</div>
+    <div>
+      <label for="label1">Username:</label>
+      <input type="text" id="uname" rows="1" cols="20" maxlength="15" minlength="2" placeholder="Username" onkeypress="return /[0-9a-zA-Z]/i.test(event.key)">
+      <button id="btn" onclick="changeImage()">Submit</button><br>
+      <p style="font-family: sans-serif; font-size: 12px;color: #968156;">Username cannot contain special characters. Maximum 15 characters.</p>
+      <p id="username"></p>
+      <script> 
+        var username = document.getElementById("username");
+        function changeImage() {
+          var uname = document.getElementById("uname")
+          var enteredText = uname.value;
+          username.innerHTML = enteredText + " " ;
+        }
+      </script>
+    </div><br/>
 
-	<div>
-				<label for="label2">Password:</label>
-				<input type="text" id="pasw" rows="1" cols="20" maxlength="16" minlength="4" placeholder="Password" onkeypress="return /[0-9a-zA-Z]/i.test(event.key)">
-				<button id="btn" onclick="changeImage()">Submit</button><br>
-				<p style="font-family: sans-serif; font-size: 12px;color: rgb(150, 129, 86);">Password must be between 4 and 16 characters.</p>
-				<p id="password"></p>
-				<script> 
-				var password = document.getElementById("password");
-				function changeImage() {
-				var passw = document.getElementById("pasw")
-				}
-				</script>
-	</div>
-	
-	<div>
-		<label for="date1">Date Of Birth:</label>
-		<input type="date" name="dob" id="dob" >
-		<button id="btn" onclick="changeImage()">Save</button><br>
-		<p id="dateob"></p>
-		<script>
-			var dateob = document.getElementById("dateob");
-			function changeImage() {
-				var dob = document.getElementById("dob")
-				var date = dob.value;
-				dateob.innerHTML = date + " ";
-			}
+    <div>
+      <label for="label2">Password:</label>
+      <input type="text" id="pasw" rows="1" cols="20" maxlength="16" minlength="4" placeholder="Password">
+      <button id="btn" onclick="changeImage()">Submit</button><br>
+      <p style="font-family: sans-serif; font-size: 12px;color: rgb(150, 129, 86);">Password must be between 4 and 16 characters.</p>
+      <p id="password"></p>
+      <script> 
+        var password = document.getElementById("password");
+        function changeImage() {
+          var passw = document.getElementById("pasw")
+        }
+      </script>
+    </div><br/>
 
+    <div>
+      <label for="date1">Date Of Birth:</label>
+      <input type="date" name="dob" id="dob" >
+      <button id="btn" onclick="changeImage()">Save</button><br>
+      <p id="dateob"></p>
+      <script>
+        var dateob = document.getElementById("dateob");
+        function changeImage() {
+          var dob = document.getElementById("dob")
+          var date = dob.value;
+          dateob.innerHTML = date + " ";
+        }
+      </script>
+    </div>
 
-		</script>
-	</div>
-
-		<button id="myButton" style="margin-top: 80%; margin-left: 85%;">to page 2 ></button>
-		<script>
-			// Add event listener to button
-			document.getElementById("myButton").addEventListener("click", function() {
-			// Change the URL of the current page
-			window.location.href = "file:///C:/Users/User/Desktop/coding/pagechangetest/pages/page2.html";
+    <button id="myButton" style="margin-top: 80%; margin-left: 85%;">to page 2 ></button>
+    <script>
+      // Add event listener to button
+      document.getElementById("myButton").addEventListener("click", function() {
+        // Change the URL of the current page
+        window.location.href = "file:///C:/Users/User/Desktop/coding/pagechangetest/pages/page2.html";
 			});
 		</script>
+</div>
+<div class="centered-rectangle"></div><div class="centered-rectangle2"></div>
 	</body>
 </head>
 </html>
