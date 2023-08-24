@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Alexandria' rel='stylesheet'>
+<style>
+
+.body { 
+	background-image: url('https://images.landscapingnetwork.com/pictures/images/900x705Max/site_8/mature-oak-trees-ecotones-landscapes_9142.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: cover;
+
+    }
+    
+
+.btn-center {
+	text-align: center;
+
+}
+
+.button {
+	border: 3px solid white;
+	font-size: 16px;
+	font-family: Alexandria;
+	color: #382f5c;
+	background-color: white;
+	border-radius: 4px;
+	margin: 4px 2px;
+	transition-duration: 0.2s;
+	cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    width: 150px;
+}
+
+.button:hover { 
+	background-color: transparent;
+    border: 3px solid white;
+    color: white;
+}
+</style>
+</head>
+<body class="body">
+<div class="btn-center">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<button class="button">Shop Now</button>
+</div>
+</body>
+</html>
